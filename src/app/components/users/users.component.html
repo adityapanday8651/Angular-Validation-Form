@@ -1,0 +1,32 @@
+<h1 class="text-center"> All Users Data </h1>
+
+<div>
+    <div class="card mb-4">
+        <div class="card-body">
+            <!--Table-->
+            <table class="table table-hover">
+                <!--Table head-->
+                <thead class="mdb-color darken-3" style="background-color: darkorange;">
+                    <tr class="text-white">
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>State Id</th>
+                    </tr>
+                </thead>
+                <!--Table head-->
+                <!--Table body-->
+                <tbody>
+                    <tr *ngFor="let user of userData">
+                        <th>{{ user.id }}</th>
+                        <td>{{ user.name }}</td>
+                        <td> {{ user.email }}</td>
+                        <td>{{ user.mobile }}</td>
+                        <td>{{ user.stateId }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
